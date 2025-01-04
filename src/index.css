@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav{
+  padding: 4px;
+}
+.tool-bar{
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.react-Flow{
+
+  width: 100vw;
+  height: 70vh;
+  background-color: rgb(9, 9, 9);
+  color: white;
+
+}
+/* .nodes{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 6px;
+} */
+
+/* General Node Styling */
+.nodes {
+  background-color: #ffffff; /* Node background */
+  border: 2px solid #ccc; /* Node border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 10px 15px; /* Internal spacing */
+  font-family: 'Arial', sans-serif; /* Font */
+  font-size: 14px; /* Font size */
+  color: #333; /* Text color */
+  min-width: 150px; /* Minimum width */
+  max-width: 250px; /* Maximum width */
+  text-align: center; /* Center text alignment */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transitions */
+}
+
+/* Node Hover Effect */
+
+
+/* Node Header Styling */
+.nodes > div:first-child {
+  font-weight: bold; /* Make the header bold */
+  color: #007bff; /* Header text color */
+  margin-bottom: 10px; /* Space below the header */
+}
+
+/* Label and Input Styling */
+.nodes label {
+  display: block; /* Label on its own line */
+  font-weight: 500; /* Slightly bolder label text */
+  margin: 5px 0; /* Space above and below labels */
+}
+
+.nodes.textarea,
+.nodes input, 
+.nodes select {
+  width: calc(100% - 10px); /* Fit the input width */
+  padding: 5px; /* Internal spacing for inputs */
+  border: 1px solid #ccc; /* Input border */
+  border-radius: 4px; /* Rounded input corners */
+  font-size: 14px; /* Input font size */
+  margin-top: 3px; /* Space between label and input */
+  transition: border-color 0.2s ease-in-out; /* Smooth border transition */
+}
+
+/* Input and Select Focus Effect */
+.nodes textarea,
+.nodes select,
+.nodes input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 12px;
+  color: #333;
+  background-color: #fff;
+  resize: none;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Handle Styling */
+.react-flow__handle {
+  width: 10px; /* Handle size */
+  height: 10px;
+  background-color: #007bff; /* Handle color */
+  border-radius: 50%; /* Circular handles */
+  border: 2px solid #fff; /* White border around handle */
+  cursor: pointer; /* Pointer cursor */
+  transition: background-color 0.2s ease-in-out; /* Smooth color transition */
+}
+
+.react-flow__handle:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Node-Specific Styling (Optional) */
+.nodes.Input {
+  background-color: #e6f7ff; /* Light blue background for Input nodes */
+}
+
+.nodes.Output {
+  background-color: #fff7e6; /* Light orange background for Output nodes */
+}
+
+.nodes.LLM {
+  background-color: #f3e6ff; /* Light purple background for LLM nodes */
+}
+
+.nodes.Text {
+  background-color: #e6ffe6; /* Light green background for Text nodes */
+}
+.nodes img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
